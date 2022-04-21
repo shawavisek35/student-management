@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: aqua;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+.container {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  margin: 0px 0px 20px 0px;
+}
+
+.nav-brand {
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.navs {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.student-page {
+  background-color: white;
+  height: 80%;
+  padding: 30px;
+  display: flex;
+  margin: 0 80px;
+  border-radius: 10px
+}
+
+.student-info {
+}
+
+.short-info {
+  width: 30%;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic img{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.long-info {
+  width: 70%;
+  background: red;
+}
+
+.profile-info {
+  padding: 15px;
+  margin-top: 50px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name, .address, .skills {
+  margin: 15px;
+}
+
+.name .label-name, .address .label-address, .skills .label-skills {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.name .label-name::after, .address .label-address::after, .skills .label-skills::after {
+  content: "";
+  width: 327px;
+  height: 1px;
+  background: #000000;
+  left: 90%;
+  top: 50%;
+  position: absolute;
+  opacity: 0.3;
+}
+
+
+.name .str-name, .address .str-address {
+  padding: 15px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  opacity: 0.7;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 15px
+}
+
+.skills ul li {
+  margin: 5px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  opacity: 0.7;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+}
