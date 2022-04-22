@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <a class="nav-brand" href="/">School</a>
+      <a class="nav-brand" href="/">Lajpat Institution</a>
       <ul class="navs">
         <li class="nav-item"><a href="/">Home</a></li>
         <li class="nav-item"><a href="/">Contact</a></li>
@@ -22,6 +22,9 @@
       <div class="student-info short-info">
         <div class="profile-pic">
           <img src="https://www.londonmet.ac.uk/media/london-metropolitan-university/london-met-photos/students-studying-at-london-met/student-profiles/Natalie-Lewkowicz.webp" alt="profile-pic" />
+        </div>
+        <div class="info-click">
+          <button class="profile-info-button">Know More</button>
         </div>
         <div class="profile-info">
           <div class="name">
@@ -44,8 +47,24 @@
           </div>
         </div>
       </div>
-      <div class="student-info long-info"></div>
+      <div class="student-info long-info">
+        <img src="https://img.freepik.com/free-vector/school-building-educational-institution-college_107791-1051.jpg?size=626&ext=jpg&ga=GA1.1.832204938.1643500800" alt="">
+      </div>
     </div>
   </div>
 </body>
+<script>
+  const infoButton = document.querySelector('.profile-info-button');
+  infoButton.addEventListener('click', () => {
+    const info = document.querySelector('.profile-info');
+    if(infoButton.innerHTML === 'Show Info') {
+      infoButton.innerHTML = 'Hide'
+      info.style.visibility = 'visible';      
+    }
+    else {
+      infoButton.innerHTML = 'Show Info'
+      info.style.visibility = 'hidden';
+    }
+  })
+</script>
 </html>
