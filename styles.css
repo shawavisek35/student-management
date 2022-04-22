@@ -99,6 +99,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  visibility: hidden;
 }
 
 .name, .address, .skills {
